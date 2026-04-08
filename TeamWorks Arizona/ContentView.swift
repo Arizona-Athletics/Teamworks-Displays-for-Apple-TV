@@ -7,15 +7,22 @@
 
 import SwiftUI
 
+struct TeamworksWebView: UIViewControllerRepresentable {
+    let urlString: String
+
+    func makeUIViewController(context: Context) -> TeamworksWebViewController {
+        return TeamworksWebViewController(url: urlString)
+    }
+
+    func updateUIViewController(_ uiViewController: TeamworksWebViewController, context: Context) {
+        // No updates needed - URL is fixed
+    }
+}
+
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        TeamworksWebView(urlString: "https://displays.tw")
+            .ignoresSafeArea()
     }
 }
 
