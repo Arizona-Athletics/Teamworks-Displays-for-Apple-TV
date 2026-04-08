@@ -28,4 +28,4 @@ Apple TV (tvOS) app that displays the Teamworks web experience in a full-screen 
 - Autoplay attempts run on a timer to keep embedded videos active.
 
 ## License
-MIT License. See `LICENSE`.
+Proprietary. See `LICENSE` for the full terms.
